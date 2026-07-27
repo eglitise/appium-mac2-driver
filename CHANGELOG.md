@@ -1,3 +1,9 @@
+## [4.0.5](https://github.com/appium/appium-mac2-driver/compare/v4.0.4...v4.0.5) (2026-07-27)
+
+### Miscellaneous Chores
+
+* Integrate oxc and release configs ([#406](https://github.com/appium/appium-mac2-driver/issues/406)) ([ab72a91](https://github.com/appium/appium-mac2-driver/commit/ab72a91355724f668276d03772a2f47a8a0e6cdf))
+
 ## [4.0.4](https://github.com/appium/appium-mac2-driver/compare/v4.0.3...v4.0.4) (2026-07-15)
 
 ### Miscellaneous Chores
