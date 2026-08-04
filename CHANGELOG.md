@@ -1,3 +1,9 @@
+## [4.0.6](https://github.com/appium/appium-mac2-driver/compare/v4.0.5...v4.0.6) (2026-08-04)
+
+### Miscellaneous Chores
+
+* **deps:** bump appium-xcode from 6.2.6 to 7.1.0 ([#407](https://github.com/appium/appium-mac2-driver/issues/407)) ([c0afb2e](https://github.com/appium/appium-mac2-driver/commit/c0afb2e8eb07418078d474279e4f9a535240db1a))
+
 ## [4.0.5](https://github.com/appium/appium-mac2-driver/compare/v4.0.4...v4.0.5) (2026-07-27)
 
 ### Miscellaneous Chores
