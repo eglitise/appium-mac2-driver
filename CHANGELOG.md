@@ -1,3 +1,9 @@
+## [4.0.7](https://github.com/appium/appium-mac2-driver/compare/v4.0.6...v4.0.7) (2026-08-06)
+
+### Miscellaneous Chores
+
+* rename JWProxy to WebDriverProxy ([#409](https://github.com/appium/appium-mac2-driver/issues/409)) ([a503cb4](https://github.com/appium/appium-mac2-driver/commit/a503cb41e2f2bcf8b616cd093571862dd9e8fc89))
+
 ## [4.0.6](https://github.com/appium/appium-mac2-driver/compare/v4.0.5...v4.0.6) (2026-08-04)
 
 ### Miscellaneous Chores
