@@ -1,3 +1,9 @@
+## [4.1.0](https://github.com/appium/appium-mac2-driver/compare/v4.0.7...v4.1.0) (2026-08-07)
+
+### Features
+
+* locate WKWebView web elements by DOM id via AXDOMIdentifier (opt-in) ([#405](https://github.com/appium/appium-mac2-driver/issues/405)) ([9f7cf35](https://github.com/appium/appium-mac2-driver/commit/9f7cf3570fef0c8a449dcef038563427807e8cd7))
+
 ## [4.0.7](https://github.com/appium/appium-mac2-driver/compare/v4.0.6...v4.0.7) (2026-08-06)
 
 ### Miscellaneous Chores
