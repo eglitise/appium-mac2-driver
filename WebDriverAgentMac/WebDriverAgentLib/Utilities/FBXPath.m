@@ -184,7 +184,7 @@ static NSString *const kXMLIndexPathKey = @"private_indexPath";
     return @[];
   }
 
-  NSMutableArray<NSString *> *hashes = [NSMutableArray array];
+  NSMutableSet<NSString *> *hashes = [NSMutableSet set];
   for (NSXMLNode *node in nodes) {
     if (![node isKindOfClass:NSXMLElement.class]) {
       continue;
@@ -195,21 +195,10 @@ static NSString *const kXMLIndexPathKey = @"private_indexPath";
     }
     [hashes addObject:attrValue];
   }
-  NSMutableArray<XCUIElement *> *matchingElements = [NSMutableArray array];
-  NSString *selfHash = [AMSnapshotUtils hashWithSnapshot:rootSnapshot];
-  if ([hashes containsObject:selfHash]) {
-    [matchingElements addObject:rootElement];
-    if (firstMatch) {
-      return matchingElements.copy;
-    }
-  }
-  NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id snapshot, NSDictionary *bindings) {
-    return [hashes containsObject:[AMSnapshotUtils hashWithSnapshot:snapshot]];
-  }];
-  [matchingElements addObjectsFromArray:[[rootElement descendantsMatchingType:XCUIElementTypeAny] matchingPredicate:predicate].am_allMatches];
-  return firstMatch && matchingElements.count > 0
-    ? @[matchingElements.firstObject]
-    : matchingElements.copy;
+  return [AMSnapshotUtils elementsWithHashes:hashes.copy
+                                 rootElement:rootElement
+                                rootSnapshot:rootSnapshot
+                       includeOnlyFirstMatch:firstMatch];
 }
 
 + (NSXMLDocument *)xmlRepresentationWithSnapshot:(id<XCUIElementSnapshot>)root
@@ -366,7 +355,7 @@ static NSString *const FBAbstractMethodInvocationException = @"AbstractMethodInv
 
 + (NSString *)valueForElement:(id<XCUIElementSnapshot>)element
 {
-  return element.identifier;
+  return [AMSnapshotUtils wdIdentifierWithSnapshot:element];
 }
 
 @end
