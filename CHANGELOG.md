@@ -1,3 +1,9 @@
+## [4.1.1](https://github.com/appium/appium-mac2-driver/compare/v4.1.0...v4.1.1) (2026-08-08)
+
+### Bug Fixes
+
+* support WebDriverAgent builds with Xcode 27 ([#411](https://github.com/appium/appium-mac2-driver/issues/411)) ([8cd23fc](https://github.com/appium/appium-mac2-driver/commit/8cd23fc7485b0c6f0a0711374df627376ad4657e))
+
 ## [4.1.0](https://github.com/appium/appium-mac2-driver/compare/v4.0.7...v4.1.0) (2026-08-07)
 
 ### Features
