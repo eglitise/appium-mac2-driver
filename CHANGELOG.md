@@ -1,3 +1,9 @@
+## [4.2.0](https://github.com/appium/appium-mac2-driver/compare/v4.1.1...v4.2.0) (2026-08-10)
+
+### Features
+
+* locate WKWebView web elements via predicate string and class chain ([#412](https://github.com/appium/appium-mac2-driver/issues/412)) ([42a49aa](https://github.com/appium/appium-mac2-driver/commit/42a49aa8c321a2b554facfcf330d61d4feff99ed))
+
 ## [4.1.1](https://github.com/appium/appium-mac2-driver/compare/v4.1.0...v4.1.1) (2026-08-08)
 
 ### Bug Fixes
